@@ -1,9 +1,4 @@
 from django.db import models
-from neural_network import *
-import numpy as np
-from tensorflow.keras.models import load_model
-from tensorflow.keras.preprocessing import image
-
 
 
 class Category(models.Model):
@@ -40,6 +35,3 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
-
-
-
